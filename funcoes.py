@@ -5,9 +5,9 @@ WIDTH = 800
 HEIGHT = 600
 TITLE = "primeiro jogo em Py"
 estado_jogo= "JOGANDO"
-pontos = 0
+pontos = 0 
 
-
+from funcoes import redimensionar, reiniciar_jogo, mover_bolso, spaw_coraçao
 
 def redimensionar(ator,altura):
     escala = altura / ator.height
