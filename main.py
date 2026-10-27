@@ -46,7 +46,7 @@ def update():
         coraçao.y = random.randint(50, HEIGHT - 50)
         pontos = pontos + 3
 
-    mover_bolso()
+    mover_bolso(bolso,bananinha)
     
 
 pgzrun.go()
