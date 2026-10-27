@@ -7,15 +7,7 @@ TITLE = "primeiro jogo em Py"
 estado_jogo= "JOGANDO"
 pontos = 0
 
-
-
-def redimensionar(ator,altura):
-    escala = altura / ator.height
-    novo = pygame.transform.smoothscale(
-        ator._orig_surf, (int(ator.width*escala), altura))
-    ator._orig_surf = ator._surf = novo
-    ator._update_pos()
-
+from funcoes import redimensionar
 
 bananinha = Actor("banana cat pixels",(100,100))
 redimensionar(bananinha,100)
@@ -90,7 +82,7 @@ def update():
     if bananinha.colliderect(coraçao):
         coraçao.x = random.randint(50, WIDTH - 50)
         coraçao.y = random.randint(50, HEIGHT - 50)
-        pontos = pontos + 1
+        pontos = pontos + 3
 
     mover_bolso()
     
